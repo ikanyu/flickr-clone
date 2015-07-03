@@ -1,0 +1,11 @@
+<div class="container">
+	<form action="/albums/<%= @album.id %>/photos/create" method="post" enctype="multipart/form-data">
+		<h3>Name</h3>
+		<input type="text" name="photo[name]">
+		<h3>Upload</h3>
+		<input type="file" name="photo[path]">
+		<input type="submit" value="Submit">
+	</form>
+
+	<%= session[:id] %>
+</div>
